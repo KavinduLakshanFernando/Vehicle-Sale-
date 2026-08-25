@@ -1,0 +1,22 @@
+{
+  "name": "vehicle-sale-email-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node init && next dev -p 3001",
+    "build": "node init && next build",
+    "start": "node init && next start -p 3001"
+  },
+  "dependencies": {
+    "next": "16.3.0",
+    "nodemailer": "^7.0.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/nodemailer": "^6.4.17",
+    "@types/react": "^19",
+    "typescript": "^5"
+  }
+}

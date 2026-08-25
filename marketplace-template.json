@@ -1,0 +1,191 @@
+{
+  "framework": "nextjs-static-export",
+  "version": 2,
+  "visualEditing": {
+    "contractVersion": 1,
+    "mode": "strict",
+    "controlOnlyPaths": [
+      "home.heroButtonAction",
+      "home.ctaButtonAction",
+      "home.bannerImageUrl",
+      "home.whyChooseItems[*].id",
+      "about.highlights[*].id",
+      "vehicles[*].id",
+      "contact.email"
+    ]
+  },
+  "siteDataFile": "src/data/site-data.json",
+  "outputDirectory": "out",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "basePathEnvVar": "NEXT_PUBLIC_SITE_BASE_PATH",
+  "pages": [
+    { "id": "home", "route": "/", "label": "Home" },
+    { "id": "inventory", "route": "/inventory", "label": "Inventory" },
+    { "id": "about_us", "route": "/about_us", "label": "About Us" },
+    { "id": "contact", "route": "/contact", "label": "Contact" }
+  ],
+  "editorSchema": {
+    "sections": [
+      {
+        "pageKey": "home",
+        "label": "Home Page",
+        "fields": [
+          { "key": "common.navigation.home", "type": "text", "label": "Home nav label", "required": true },
+          { "key": "home.heroTitle", "type": "text", "label": "Hero title", "required": true },
+          { "key": "home.heroSubtitle", "type": "textarea", "label": "Hero subtitle", "required": true },
+          { "key": "home.heroButtonText", "type": "text", "label": "Hero button text", "required": true },
+          { "key": "home.heroButtonAction", "type": "select", "label": "Hero button destination", "options": ["inventory", "contact", "about_us"], "required": true },
+          { "key": "home.bannerImageUrl", "type": "image", "label": "Hero banner fallback image", "required": true },
+          { "key": "home.introTitle", "type": "text", "label": "Intro section title", "required": true },
+          { "key": "home.introParagraph", "type": "textarea", "label": "Intro paragraph", "required": true },
+          { "key": "home.featuredSectionTitle", "type": "text", "label": "Featured vehicles title", "required": true },
+          { "key": "home.whyChooseTitle", "type": "text", "label": "Why choose us title", "required": true },
+          { "key": "gallery.galleryTitle", "type": "text", "label": "Gallery title", "required": true },
+          { "key": "home.ctaTitle", "type": "text", "label": "CTA title", "required": true },
+          { "key": "home.ctaSubtitle", "type": "textarea", "label": "CTA subtitle", "required": true },
+          { "key": "home.ctaButtonText", "type": "text", "label": "CTA button text", "required": true },
+          { "key": "home.ctaButtonAction", "type": "select", "label": "CTA button destination", "options": ["contact", "inventory"], "required": true }
+        ],
+        "lists": [
+          {
+            "key": "home.heroSlides",
+            "label": "Hero slideshow images",
+            "minItems": 0,
+            "maxItems": 6,
+            "itemField": {
+              "type": "image",
+              "label": "Slide image",
+              "required": true
+            }
+          },
+          {
+            "key": "home.whyChooseItems",
+            "label": "Why choose us items",
+            "minItems": 0,
+            "maxItems": 6,
+            "itemFields": [
+              { "key": "title", "type": "text", "label": "Title", "required": true },
+              { "key": "description", "type": "textarea", "label": "Description", "required": true }
+            ]
+          },
+          {
+            "key": "gallery.galleryImages",
+            "label": "Gallery images",
+            "minItems": 0,
+            "maxItems": 12,
+            "itemField": {
+              "type": "image",
+              "label": "Image URL",
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "pageKey": "inventory",
+        "label": "Inventory Page",
+        "fields": [
+          { "key": "common.navigation.inventory", "type": "text", "label": "Inventory nav label", "required": true },
+          { "key": "inventory.pageTitle", "type": "text", "label": "Page title", "required": true },
+          { "key": "inventory.pageSubtitle", "type": "textarea", "label": "Page subtitle", "required": true },
+          { "key": "inventory.bannerImageUrl", "type": "image", "label": "Page banner image", "required": true }
+        ],
+        "lists": [
+          {
+            "key": "vehicles",
+            "label": "Vehicles",
+            "minItems": 0,
+            "maxItems": 24,
+            "itemFields": [
+              { "key": "name", "type": "text", "label": "Vehicle name", "required": true },
+              { "key": "year", "type": "text", "label": "Year", "required": true },
+              { "key": "mileage", "type": "text", "label": "Mileage", "required": true },
+              { "key": "fuelType", "type": "text", "label": "Fuel type", "required": true },
+              { "key": "transmission", "type": "text", "label": "Transmission", "required": true },
+              { "key": "price", "type": "text", "label": "Price", "required": true },
+              { "key": "description", "type": "textarea", "label": "Description", "required": true },
+              { "key": "imageUrl", "type": "image", "label": "Vehicle image", "required": true },
+              { "key": "badge", "type": "text", "label": "Badge label", "required": false }
+            ]
+          }
+        ]
+      },
+      {
+        "pageKey": "about_us",
+        "label": "About Us",
+        "fields": [
+          { "key": "common.navigation.aboutUs", "type": "text", "label": "About nav label", "required": true },
+          { "key": "about.pageTitle", "type": "text", "label": "Page title", "required": true },
+          { "key": "about.aboutBusiness", "type": "textarea", "label": "About the business", "required": true },
+          { "key": "about.vision", "type": "textarea", "label": "Vision", "required": true },
+          { "key": "about.mission", "type": "textarea", "label": "Mission", "required": true },
+          { "key": "about.whyChooseUs", "type": "textarea", "label": "Why choose us", "required": true },
+          { "key": "about.profileImageUrl", "type": "image", "label": "About image", "required": true },
+          { "key": "about.bannerImageUrl", "type": "image", "label": "Banner image", "required": true }
+        ],
+        "lists": [
+          {
+            "key": "about.highlights",
+            "label": "Highlights",
+            "minItems": 0,
+            "maxItems": 6,
+            "itemFields": [
+              { "key": "title", "type": "text", "label": "Title", "required": true },
+              { "key": "description", "type": "textarea", "label": "Description", "required": true },
+              { "key": "icon", "type": "text", "label": "Icon emoji", "required": false }
+            ]
+          }
+        ]
+      },
+      {
+        "pageKey": "contact",
+        "label": "Contact",
+        "fields": [
+          { "key": "common.navigation.contact", "type": "text", "label": "Contact nav label", "required": true },
+          { "key": "contact.pageTitle", "type": "text", "label": "Page title", "required": true },
+          { "key": "contact.pageSubtitle", "type": "textarea", "label": "Page subtitle", "required": true },
+          { "key": "contact.contactNumber", "type": "tel", "label": "Phone number", "required": true },
+          { "key": "contact.whatsapp", "type": "tel", "label": "WhatsApp number", "required": false },
+          { "key": "contact.address", "type": "textarea", "label": "Address", "required": true },
+          { "key": "contact.openingHours", "type": "text", "label": "Opening hours", "required": true },
+          { "key": "contact.googleMapLink", "type": "url", "label": "Google map link", "required": false },
+          { "key": "contact.formTitle", "type": "text", "label": "Form title", "required": true },
+          { "key": "contact.formSubtitle", "type": "textarea", "label": "Form subtitle", "required": true },
+          { "key": "contact.submitButtonText", "type": "text", "label": "Submit button text", "required": true },
+          { "key": "contact.bannerImageUrl", "type": "image", "label": "Contact banner image", "required": true }
+        ]
+      },
+      {
+        "pageKey": "common",
+        "label": "Common",
+        "fields": [
+          { "key": "common.logoUrl", "type": "image", "label": "Logo", "required": true },
+          { "key": "common.websiteTitle", "type": "text", "label": "Website title", "required": true },
+          { "key": "common.shortDescription", "type": "textarea", "label": "Short description", "required": true },
+          { "key": "common.contactNumber", "type": "tel", "label": "Contact number", "required": true },
+          { "key": "common.whatsapp", "type": "tel", "label": "WhatsApp number", "required": false },
+          { "key": "common.email", "type": "email", "label": "Email", "required": false },
+          { "key": "common.address", "type": "textarea", "label": "Address", "required": true },
+          { "key": "common.socialMedia.facebook", "type": "url", "label": "Facebook", "required": false },
+          { "key": "common.socialMedia.instagram", "type": "url", "label": "Instagram", "required": false },
+          { "key": "common.socialMedia.youtube", "type": "url", "label": "YouTube", "required": false }
+        ]
+      }
+    ]
+  },
+  "themeSchema": {
+    "fields": [
+      { "key": "primaryColor", "type": "color", "label": "Primary color", "default": "#0F2744" },
+      { "key": "secondaryColor", "type": "color", "label": "Secondary color", "default": "#1E3A5F" },
+      { "key": "accentColor", "type": "color", "label": "Accent color", "default": "#E85D04" },
+      { "key": "backgroundColor", "type": "color", "label": "Background color", "default": "#F8FAFC" },
+      { "key": "textColor", "type": "color", "label": "Text color", "default": "#0F172A" },
+      { "key": "headingFont", "type": "text", "label": "Heading font", "default": "Inter" },
+      { "key": "bodyFont", "type": "text", "label": "Body font", "default": "Inter" },
+      { "key": "heroMinHeight", "type": "text", "label": "Hero min height", "default": "85vh" },
+      { "key": "sectionPadding", "type": "text", "label": "Section padding", "default": "5rem" },
+      { "key": "style", "type": "text", "label": "Style name", "default": "Automotive Modern" }
+    ]
+  }
+}

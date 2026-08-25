@@ -1,0 +1,282 @@
+{
+  "project": {
+    "id": "demo-vehicle-sale",
+    "title": "Apex Motors Vehicle Sale",
+    "status": "DRAFT"
+  },
+  "merchant": {
+    "businessName": "Apex Motors",
+    "description": "Premium pre-owned and new vehicles with transparent pricing and trusted service.",
+    "contact": {
+      "phone": "+94 77 456 7890",
+      "email": "sales@apexmotors.lk",
+      "whatsapp": "+94774567890"
+    },
+    "address": {
+      "line1": "45 Automotive Boulevard",
+      "city": "Colombo",
+      "district": "Colombo",
+      "province": "Western",
+      "postalCode": "00300"
+    },
+    "social": {
+      "facebook": "https://facebook.com/apexmotors",
+      "instagram": "https://instagram.com/apexmotors",
+      "tiktok": "",
+      "youtube": "https://youtube.com/@apexmotors",
+      "linkedin": "",
+      "website": "https://apexmotors.lk"
+    },
+    "logoUrl": "https://images.unsplash.com/photo-1619642751034-765df6917c12?auto=format&fit=crop&w=160&h=160&q=80"
+  },
+  "template": {
+    "id": "vehicle-sale-template",
+    "name": "Apex Motors Theme",
+    "engine": "NEXT_STATIC_EXPORT",
+    "structure": {
+      "version": 1,
+      "name": "Apex Motors Theme",
+      "pages": ["home", "inventory", "about_us", "contact"],
+      "theme": {
+        "primaryColor": "#0a1628",
+        "secondaryColor": "#152238",
+        "accentColor": "#ff6b2c",
+        "backgroundColor": "#f4f7fb",
+        "textColor": "#0F172A",
+        "headingFont": "Inter",
+        "bodyFont": "Inter",
+        "heroMinHeight": "85vh",
+        "sectionPadding": "5rem",
+        "style": "Automotive Modern"
+      }
+    }
+  },
+  "requirements": {
+    "websiteType": "Vehicle Sale",
+    "mainPurpose": "Showcase vehicle inventory and generate sales inquiries",
+    "requiredPages": ["home", "inventory", "about_us", "contact"]
+  },
+  "content": {
+    "common": {
+      "logoUrl": "https://images.unsplash.com/photo-1619642751034-765df6917c12?auto=format&fit=crop&w=160&h=160&q=80",
+      "websiteTitle": "Apex Motors",
+      "shortDescription": "Drive your dream. Trusted vehicles, transparent deals, and expert guidance every step of the way.",
+      "contactNumber": "+94 77 456 7890",
+      "email": "sales@apexmotors.lk",
+      "whatsapp": "+94774567890",
+      "address": "45 Automotive Boulevard, Colombo 03, Sri Lanka",
+      "navigation": {
+        "home": "Home",
+        "inventory": "Inventory",
+        "aboutUs": "About Us",
+        "contact": "Contact"
+      },
+      "socialMedia": {
+        "facebook": "https://facebook.com/apexmotors",
+        "instagram": "https://instagram.com/apexmotors",
+        "youtube": "https://youtube.com/@apexmotors"
+      }
+    },
+    "home": {
+      "heroTitle": "Find Your Perfect Ride Today",
+      "heroSubtitle": "Browse certified pre-owned and brand-new vehicles with competitive financing, full inspection reports, and hassle-free trade-ins.",
+      "heroButtonText": "Browse Inventory",
+      "heroButtonAction": "inventory",
+      "bannerImageUrl": "/images/hero-1.jpg",
+      "heroSlides": [
+        "/images/hero-1.jpg",
+        "/images/hero-2.jpg",
+        "/images/hero-3.jpg"
+      ],
+      "introTitle": "Your Trusted Vehicle Partner",
+      "introParagraph": "At Apex Motors, we combine quality inventory with honest advice. Every vehicle passes a 150-point inspection, and our team helps you compare options so you drive away confident in your purchase.",
+      "featuredSectionTitle": "Featured Vehicles",
+      "whyChooseTitle": "Why Choose Apex Motors",
+      "whyChooseItems": [
+        {
+          "id": "wc1",
+          "title": "Certified Quality",
+          "description": "Every vehicle undergoes rigorous multi-point inspection before listing."
+        },
+        {
+          "id": "wc2",
+          "title": "Flexible Financing",
+          "description": "Competitive rates and tailored payment plans to fit your budget."
+        },
+        {
+          "id": "wc3",
+          "title": "Trade-In Welcome",
+          "description": "Get a fair valuation and upgrade to your next vehicle seamlessly."
+        },
+        {
+          "id": "wc4",
+          "title": "After-Sales Support",
+          "description": "Extended warranty options and dedicated service advisors."
+        }
+      ],
+      "ctaTitle": "Ready to Take a Test Drive?",
+      "ctaSubtitle": "Schedule a visit or send us your questions. Our sales team responds within 24 hours.",
+      "ctaButtonText": "Contact Us",
+      "ctaButtonAction": "contact"
+    },
+    "inventory": {
+      "pageTitle": "Vehicle Inventory",
+      "pageSubtitle": "Explore our curated selection of sedans, SUVs, trucks, and hybrids. Updated weekly with fresh arrivals.",
+      "bannerImageUrl": "/images/inventory-banner.jpg"
+    },
+    "vehicles": [
+      {
+        "id": "v1",
+        "name": "Toyota Camry Hybrid",
+        "year": "2023",
+        "mileage": "12,400 km",
+        "fuelType": "Hybrid",
+        "transmission": "Automatic",
+        "price": "LKR 12,850,000",
+        "description": "Premium hybrid sedan with advanced safety suite, leather interior, and excellent fuel economy.",
+        "imageUrl": "/images/car-camry.jpg",
+        "badge": "Featured"
+      },
+      {
+        "id": "v2",
+        "name": "BMW X5 xDrive",
+        "year": "2022",
+        "mileage": "28,600 km",
+        "fuelType": "Petrol",
+        "transmission": "Automatic",
+        "price": "LKR 22,500,000",
+        "description": "Luxury SUV with panoramic roof, premium sound system, and full service history.",
+        "imageUrl": "/images/car-bmwx5.jpg",
+        "badge": "Premium"
+      },
+      {
+        "id": "v3",
+        "name": "Honda CR-V",
+        "year": "2021",
+        "mileage": "35,200 km",
+        "fuelType": "Petrol",
+        "transmission": "Automatic",
+        "price": "LKR 9,750,000",
+        "description": "Reliable family SUV with spacious cargo, Apple CarPlay, and one-owner history.",
+        "imageUrl": "/images/car-crv.jpg",
+        "badge": "Best Value"
+      },
+      {
+        "id": "v4",
+        "name": "Mercedes-Benz C-Class",
+        "year": "2020",
+        "mileage": "41,800 km",
+        "fuelType": "Petrol",
+        "transmission": "Automatic",
+        "price": "LKR 14,200,000",
+        "description": "Elegant executive sedan with ambient lighting, digital cockpit, and certified pre-owned warranty.",
+        "imageUrl": "/images/car-cclass.jpg",
+        "badge": "Certified"
+      },
+      {
+        "id": "v5",
+        "name": "Ford Ranger Wildtrak",
+        "year": "2022",
+        "mileage": "22,100 km",
+        "fuelType": "Diesel",
+        "transmission": "Automatic",
+        "price": "LKR 11,400,000",
+        "description": "Adventure-ready pickup with 4WD, tow package, and rugged styling.",
+        "imageUrl": "/images/car-ranger.jpg",
+        "badge": "4x4"
+      },
+      {
+        "id": "v6",
+        "name": "Tesla Model 3",
+        "year": "2023",
+        "mileage": "8,900 km",
+        "fuelType": "Electric",
+        "transmission": "Single-Speed",
+        "price": "LKR 18,900,000",
+        "description": "Long Range electric sedan with autopilot, glass roof, and supercharger access.",
+        "imageUrl": "/images/car-tesla.jpg",
+        "badge": "Electric"
+      }
+    ],
+    "about": {
+      "pageTitle": "About Apex Motors",
+      "aboutBusiness": "Founded in 2010, Apex Motors has grown into one of the region's most trusted vehicle dealerships. We specialize in quality pre-owned and new vehicles, offering transparent pricing, detailed vehicle histories, and personalized customer service.",
+      "vision": "To redefine the car buying experience with honesty, quality, and innovation.",
+      "mission": "To connect every customer with the right vehicle through expert guidance, fair deals, and lifelong support.",
+      "whyChooseUs": "Our showroom features over 80 vehicles at any time, backed by certified technicians and a customer-first culture. We believe buying a car should be exciting—not stressful.",
+      "profileImageUrl": "/images/about-banner.jpg",
+      "bannerImageUrl": "/images/about-banner.jpg",
+      "highlights": [
+        {
+          "id": "h1",
+          "title": "15+ Years Experience",
+          "description": "Serving thousands of satisfied customers since 2010.",
+          "icon": "🏆"
+        },
+        {
+          "id": "h2",
+          "title": "150-Point Inspection",
+          "description": "Comprehensive checks on every vehicle before it hits our lot.",
+          "icon": "🔧"
+        },
+        {
+          "id": "h3",
+          "title": "80+ Vehicles",
+          "description": "Wide selection across all categories and price ranges.",
+          "icon": "🚗"
+        }
+      ]
+    },
+    "gallery": {
+      "galleryTitle": "Showroom Gallery",
+      "galleryImages": [
+        "/images/inventory-banner.jpg",
+        "/images/about-banner.jpg",
+        "/images/hero-1.jpg",
+        "/images/hero-3.jpg"
+      ]
+    },
+    "contact": {
+      "pageTitle": "Get In Touch",
+      "pageSubtitle": "Have a question about a vehicle? Want to schedule a test drive? Fill out the form and our team will get back to you promptly.",
+      "contactNumber": "+94 77 456 7890",
+      "whatsapp": "+94774567890",
+      "email": "sales@apexmotors.lk",
+      "address": "45 Automotive Boulevard, Colombo 03, Sri Lanka",
+      "openingHours": "Mon–Sat: 9:00 AM – 7:00 PM | Sun: 10:00 AM – 4:00 PM",
+      "googleMapLink": "https://maps.google.com/?q=Colombo+Sri+Lanka",
+      "formTitle": "Send Us a Message",
+      "formSubtitle": "Tell us which vehicle interests you or describe what you are looking for.",
+      "submitButtonText": "Send Message",
+      "bannerImageUrl": "/images/contact-banner.jpg"
+    }
+  },
+  "media": {
+    "business_logo": [
+      "https://images.unsplash.com/photo-1619642751034-765df6917c12?auto=format&fit=crop&w=160&h=160&q=80"
+    ],
+    "logo": [
+      "https://images.unsplash.com/photo-1619642751034-765df6917c12?auto=format&fit=crop&w=160&h=160&q=80"
+    ],
+    "website_banner": [
+      "/images/hero-1.jpg"
+    ],
+    "hero": [
+      "/images/hero-1.jpg",
+      "/images/hero-2.jpg",
+      "/images/hero-3.jpg"
+    ],
+    "product": [
+      "/images/car-camry.jpg",
+      "/images/car-bmwx5.jpg",
+      "/images/car-crv.jpg",
+      "/images/car-cclass.jpg",
+      "/images/car-ranger.jpg",
+      "/images/car-tesla.jpg"
+    ],
+    "gallery": [
+      "/images/inventory-banner.jpg",
+      "/images/about-banner.jpg"
+    ]
+  }
+}
